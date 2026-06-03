@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Event Portal</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        #welcomeBanner {
+            background-color: lightblue;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 20px;
+        }
+
+        .highlight {
+            background-color: yellow;
+            padding: 4px;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .gallery-img {
+            width: 200px;
+            height: 150px;
+            border: 3px solid #333;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery-img:hover {
+            transform: scale(1.05);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input, select, textarea, button {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        #videoMessage,
+        #locationResult,
+        #feeDisplay,
+        #charCount {
+            margin-top: 10px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h1>Local Community Event Portal</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+        <a href="help.html" target="_blank">Help</a>
+    </nav>
+
+    <!-- Main -->
+    <section id="home">
+        <div id="welcomeBanner">
+            Welcome to the Community Portal!
+            <span style="color:red; font-weight:bold;">
+                Special Offer: Free Entry for Early Registration!
+            </span>
+        </div>
+
+        <p class="highlight">Stay connected with your local community events.</p>
+    </section>
+
+    <section id="events">
+        <h2>Community Event Gallery</h2>
+
+        <table border="1">
+            <tr>
+                <td>
+                    <img src=c:\Users\SAMA\Desktop\cogpro\pic\vN6kf-ZZVZutL6KI-Y5jALVklAn2tUkell-x5w3pjAVQrn4ESru1rq_wCt6JveFwzLakQubE_vCgUYHml29KyxnH1p_m0VOd8598pn_P2-ioE0ojadPZct5fL6dPOjDiMMMdXsmIxHEZg-oq5g7OVqoojkdQMKCEqIx5q4UQZMXZFA5Wut1kI4y07ovX-r9H.jfif
+                         alt="Music Festival"
+                         title="Music Festival"
+                         class="gallery-img"
+                         ondblclick="enlargeImage(this)">
+                    <p>Music Festival</p>
+                </td>
+
+                <td>
+                    <img src=c:\Users\SAMA\Desktop\cogpro\pic\DiJa6VysjdJw33v_mttPdU6ByugFZOywjmxCx2no0Qvqj41hWDNeUI4muaG8WYOqCynW_C348r7qid2pGytjwX80gevLJFETsvZbxY9yq9tjf63nqUiyTaqYm70XQNCDPzVxxJyNTDYgaQkCKX24bh_BxJ8XtRCw5Y1A0y6m5Hg.jfif
+                         alt="Food Carnival"
+                         title="Food Carnival"
+                         class="gallery-img"
+                         ondblclick="enlargeImage(this)">
+                    <p>Food Carnival</p>
+                </td>
+
+                <td>
+                    <img src=c:\Users\SAMA\Desktop\cogpro\pic\yIXIYzBoAWBcZF2meArbX_wchXxv59mPNAiNPBLs-3x11BxLxSlI3JUg7PpcnHiAd64OYmOfXnOoBGO6kzL3K--kSiCIgj9vHtAZdpidLtPmrtr6wezlI5gzkVT7cASN9u3ntFVCQtCtFnmvtAwGhiZyBoPtvR9S-sgCQCSMR6IH3Mod2AjJRHPtsdO1t.jfif
+                         alt="Sports Day"
+                         title="Sports Day"
+                         class="gallery-img"
+                         ondblclick="enlargeImage(this)">
+                    <p>Sports Day</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src=c:\Users\SAMA\Desktop\cogpro\pic\XfDKMVf_P8omrtrT9yuuxL8iGunQCV5-9D8F9o9sISK0658a_rklKu4-bBuy1Tr0NCUpB629eRl7u9vE9UZuoVOU4jkqY15EFgvEaYeDZ8kxkAkSI0L47TfeoYhBF2PM-PZynpUbh-AIZ8bM3KXi5U8_Qu8JDGUkp_UMWa58-cWaIDL7nGkB8S--mRYXF9HF.jfif
+                         alt="Art Exhibition"
+                         title="Art Exhibition"
+                         class="gallery-img"
+                         ondblclick="enlargeImage(this)">
+                    <p>Art Exhibition</p>
+                </td>
+
+                <td>
+                    <img src="c:\Users\SAMA\Desktop\cogpro\pic\dEn13-C9pe_kngJPItzvvLI2eCIS1yMQxyDlXAdYeAsd_G50BldK9E9ZsRfJmkqewgxPqZFCm0IdESLbIDmM6b_DA6BvIpZ3-uzunRzeTNqvQTMoER7GmRJiKG-T2gE_-kFJW-7QFLY6fEmxwIEXjO-Dg90TC7j4FFa5Vz7elKw.jfif"
+                         alt="Book Fair"
+                         title="Book Fair"
+                         class="gallery-img"
+                         ondblclick="enlargeImage(this)">
+                    <p>Book Fair</p>
+                </td>
+
+                <td>
+                    <img src=c:\Users\SAMA\Desktop\cogpro\pic\mFPGHFy1zL8IKvdafPQ5Zzgdnw4u7yW6Oz56sg_EhT6Ld_j57nwsyupFuR_XOtXC5918qwqCxVE2avW9UbiIDr6-nwmSmxZ_1nqccyROt4JJ35iOIR_DNaGA4dII6tUHjA15UHBCmWUZsismMLl5fpl2iUGVQAOSbR5Ks71Cw3dlUHc78pE1EByMuaxhuUpf.jfif
+                         alt="Charity Run"
+                         title="Charity Run"
+                         class="gallery-img"
+                         ondblclick="enlargeImage(this)">
+                    <p>Charity Run</p>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Event Registration Form</h2>
+
+        <form id="registrationForm">
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name"
+                   required
+                   autofocus>
+
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email"
+                   required>
+
+            <input type="date" id="eventDate" required>
+
+            <input type="text"
+                   id="phone"
+                   placeholder="Enter phone number"
+                   onblur="validatePhone()">
+
+            <select id="eventType" onchange="showFee(); savePreference();">
+                <option value="">Select Event</option>
+                <option value="Music Festival">Music Festival</option>
+                <option value="Food Carnival">Food Carnival</option>
+                <option value="Sports Day">Sports Day</option>
+            </select>
+
+            <div id="feeDisplay"></div>
+
+            <textarea id="feedback"
+                      rows="5"
+                      placeholder="Enter feedback"
+                      onkeyup="countCharacters()"></textarea>
+
+            <div id="charCount">Characters: 0</div>
+
+            <textarea id="message"
+                      rows="4"
+                      placeholder="Additional message"></textarea>
+
+            <button type="submit" onclick="showConfirmation()">
+                Register
+            </button>
+
+            <output id="confirmationMessage"></output>
+        </form>
+    </section>
+
+    <section>
+        <h2>Event Promo Video</h2>
+
+        <video width="400" controls oncanplay="videoReady()">
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+
+        <div id="videoMessage"></div>
+    </section>
+
+    <section>
+        <h2>Find Nearby Events</h2>
+
+        <button onclick="findLocation()">Find Nearby Events</button>
+
+        <div id="locationResult"></div>
+
+        <button onclick="clearPreferences()">
+            Clear Preferences
+        </button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: community@portal.com</p>
+        <p>Phone: +91 9876543210</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Local Community Event Portal</p>
+    </footer>
+
+    <script>
+
+        // Phone validation using onblur
+        function validatePhone() {
+            let phone = document.getElementById("phone").value;
+
+            if (phone.length < 10) {
+                alert("Phone number must contain at least 10 digits");
+            }
+        }
+
+        // Display event fee using onchange
+        function showFee() {
+            let eventType = document.getElementById("eventType").value;
+            let feeDisplay = document.getElementById("feeDisplay");
+
+            let fee = "";
+
+            if (eventType === "Music Festival") {
+                fee = "₹500";
+            }
+            else if (eventType === "Food Carnival") {
+                fee = "₹300";
+            }
+            else if (eventType === "Sports Day") {
+                fee = "₹200";
+            }
+
+            feeDisplay.innerHTML = "Event Fee: " + fee;
+        }
+
+        // Confirmation on submit button click
+        function showConfirmation() {
+            document.getElementById("confirmationMessage").value =
+                "Registration submitted successfully!";
+        }
+
+        // Double click image enlarge
+        function enlargeImage(img) {
+            if (img.style.transform === "scale(1.5)") {
+                img.style.transform = "scale(1)";
+            }
+            else {
+                img.style.transform = "scale(1.5)";
+            }
+        }
+
+        // Character count in feedback textarea
+        function countCharacters() {
+            let feedback = document.getElementById("feedback").value;
+
+            document.getElementById("charCount").innerHTML =
+                "Characters: " + feedback.length;
+        }
+
+        // Video ready message
+        function videoReady() {
+            document.getElementById("videoMessage").innerHTML =
+                "Video ready to play";
+        }
+
+        // Save event preference in localStorage
+        function savePreference() {
+            let selectedEvent = document.getElementById("eventType").value;
+            localStorage.setItem("preferredEvent", selectedEvent);
+        }
+
+        // Load saved preference
+        window.onload = function () {
+            let savedEvent = localStorage.getItem("preferredEvent");
+
+            if (savedEvent) {
+                document.getElementById("eventType").value = savedEvent;
+                showFee();
+            }
+        }
+
+        // Clear preferences
+        function clearPreferences() {
+            localStorage.clear();
+            sessionStorage.clear();
+            alert("Preferences cleared successfully!");
+        }
+
+        // Geolocation
+        function findLocation() {
+
+            if (navigator.geolocation) {
+
+                navigator.geolocation.getCurrentPosition(
+
+                    function (position) {
+                        document.getElementById("locationResult").innerHTML =
+                            "Latitude: " + position.coords.latitude +
+                            "<br>Longitude: " + position.coords.longitude;
+                    },
+
+                    function (error) {
+
+                        switch (error.code) {
+                            case error.PERMISSION_DENIED:
+                                alert("User denied location access.");
+                                break;
+
+                            case error.TIMEOUT:
+                                alert("Location request timed out.");
+                                break;
+
+                            default:
+                                alert("Unable to retrieve location.");
+                        }
+                    },
+
+                    {
+                        enableHighAccuracy: true,
+                        timeout: 5000,
+                        maximumAge: 0
+                    }
+                );
+            }
+            else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        // Warn before leaving unfinished form
+        window.onbeforeunload = function () {
+            return "Your form is not submitted. Are you sure you want to leave?";
+        }
+
+        // Console log for debugging
+        console.log("Community Event Portal Loaded Successfully");
+
+    </script>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,29 @@
+.container{
+    width: 80%;
+}
+
+img{
+    width: 50vw;
+    height: auto;
+}
+
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+@media screen and (max-width:768px){
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    body{
+        font-size: 14px;
+    }
+}

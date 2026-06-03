@@ -1,0 +1,11 @@
+body{
+    background-color: rgba(200,200,200,0.5);
+    background-image: url("https://picsum.photos/200/150?6");
+    background-size: cover;
+}
+
+h2{
+    color: #FF5733;
+    background: linear-gradient(to right, blue, purple);
+    padding: 20px;
+}

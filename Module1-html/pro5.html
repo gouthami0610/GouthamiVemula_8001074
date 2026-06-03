@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+
+form{
+    width:300px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<form onsubmit="showMessage()">
+
+<input type="text"
+       placeholder="Enter Name"
+       required
+       autofocus>
+
+<input type="email"
+       placeholder="Enter Email"
+       required>
+
+<input type="date" required>
+
+<select required>
+
+<option>Select Event</option>
+<option>Music Festival</option>
+<option>Food Carnival</option>
+
+</select>
+
+<textarea placeholder="Enter Message"></textarea>
+
+<button type="submit">
+    Register
+</button>
+
+<output id="result"></output>
+
+</form>
+
+<script>
+
+function showMessage(){
+
+document.getElementById("result").value =
+"Registration Successful";
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+/* Universal selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Element selector */
+h2{
+    color: green;
+}
+
+/* ID selector */
+#mainHeader{
+    background-color: orange;
+    padding: 20px;
+}
+
+/* Class selector */
+.eventCard{
+    border: 2px solid gray;
+    padding: 15px;
+    margin: 20px;
+}
+
+/* Grouping selector */
+h3,p{
+    font-family: red;
+    background-color: lightyellow;
+    padding: 10px;
+}

@@ -1,0 +1,22 @@
+npm init -y
+npm install bootstrap sass
+// styles.scss
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// package.json
+{
+  "name": "bootstrap-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass styles.scss styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.64.0"
+  }
+}   

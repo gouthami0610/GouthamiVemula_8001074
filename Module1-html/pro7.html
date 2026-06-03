@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<video width="400"
+       controls
+       oncanplay="videoReady()">
+
+<source src="C:\Users\SAMA\Pictures\Camera Roll\WIN_20260521_15_28_04_Pro.mp4"
+        type="video/mp4">
+
+</video>
+
+<p id="msg"></p>
+
+<script>
+
+function videoReady(){
+
+document.getElementById("msg").innerHTML =
+"Video ready to play";
+
+}
+
+window.onbeforeunload = function(){
+
+return "Form not submitted.";
+
+}
+
+</script>
+
+</body>
+</html>

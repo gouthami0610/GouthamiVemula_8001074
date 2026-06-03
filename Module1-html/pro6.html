@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+Phone:
+<input type="text" onblur="validatePhone()">
+
+<br><br>
+
+<select onchange="showFee(this.value)">
+
+<option>Select Event</option>
+<option value="500">Music Event</option>
+<option value="300">Food Festival</option>
+
+</select>
+
+<p id="fee"></p>
+
+<button onclick="confirmation()">
+Submit
+</button>
+
+<br><br>
+
+<img src="C:\Users\SAMA\Desktop\cogpro\DiJa6VysjdJw33v_mttPdU6ByugFZOywjmxCx2no0Qvqj41hWDNeUI4muaG8WYOqCynW_C348r7qid2pGytjwX80gevLJFETsvZbxY9yq9tjf63nqUiyTaqYm70XQNCDPzVxxJyNTDYgaQkCKX24bh_BxJ8XtRCw5Y1A0y6m5Hg.jfif"
+     width="200"
+     ondblclick="enlarge(this)">
+
+<br><br>
+
+<textarea onkeyup="countChars(this)">
+</textarea>
+
+<p id="count"></p>
+
+<script>
+
+function validatePhone(){
+    alert("Phone validated");
+}
+
+function showFee(value){
+    document.getElementById("fee").innerHTML =
+    "Event Fee: " + value;
+}
+
+function confirmation(){
+    alert("Form Submitted");
+}
+
+function enlarge(img){
+    img.style.width = "400px";
+}
+
+function countChars(text){
+    document.getElementById("count").innerHTML =
+    "Characters: " + text.value.length;
+}
+
+</script>
+
+</body>
+</html>
