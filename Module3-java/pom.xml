@@ -1,0 +1,6 @@
+<dependency> 
+<groupid>com.mysql</groupid>
+<artifactid>mysql-connector-java</artifactid>
+<version>9.3.0</version>
+</dependency>
+
